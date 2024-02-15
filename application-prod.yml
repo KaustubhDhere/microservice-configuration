@@ -1,12 +1,11 @@
 spring:
-   profile:
-    active: Config-prod
-
+  application:
+    name: Config-prod
 eureka:
-  instance:
-     prefer-id-address: true
+  instance: 
+     prefer-ip-address: true
   client:
      fetch-registry: true
      register-with-eureka: true
-  server-uri:
-    defaultZone : http://localhost:8167/eureka
+  service-url:
+     defaultZone: http://localhost:8761/eureka
