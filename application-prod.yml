@@ -1,1 +1,12 @@
+spring:
+   profile:
+    active: Config-prod
 
+eureka:
+  instance:
+     prefer-id-address: true
+  client:
+     fetch-registry: true
+     register-with-eureka: true
+  server-uri:
+    defaultZone : http://localhost:8167/eureka
